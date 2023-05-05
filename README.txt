@@ -13,8 +13,8 @@ Instructions:
 - Run "make" command in linux terminal 
 - "export LD_LIBRARY_PATH=." may be necessary 
 - Run "python3 server.py 8000" in terminal 
-- Load "localhost:8000/home.html" into browser to load homepage 
-- Navigate the tabs to access different application functions
+- Load "localhost:8000/home.html" into browser
+- Navigate the tabs to access different functions
 
 Acknowledgements: 
 molecule.i (used with swig to generate molecile.py and molecule_wrap.c) - written
