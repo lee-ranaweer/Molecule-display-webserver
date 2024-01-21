@@ -16,7 +16,7 @@ molecule_wrap.o: molecule_wrap.c
 	$(CC) $(CFLAGS) -I/usr/include/python3.11 -c molecule_wrap.c -fPIC -o molecule_wrap.o
 
 _molecule.so: molecule_wrap.o libmol.so
-	$(CC) molecule_wrap.o -shared -L/usr/lib/python3.11/config3.11m-x86_64-linux-gnu -lpython3.11m -L. -lmol -dynamiclib -o _molecule.so
+	$(CC) molecule_wrap.o -shared -L/usr/lib/python3.11/config3.11m-x86_64-linux-gnu -lpython3.11 -L. -lmol -dynamiclib -o _molecule.so
 
 clean:
 	rm -f *.o *.so
